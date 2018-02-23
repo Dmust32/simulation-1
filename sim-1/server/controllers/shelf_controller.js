@@ -1,10 +1,10 @@
 module.exports = {
-    getShelves: (res, req, next)=> {
+    getShelves: (req, res, next)=> {
         const dbInstance = req.app.get('db');
         dbInstance.getShelves()
         .then(shelves => res.send(shelves))
     },
-    getOneShelf: (res, req, next)=> {
+    getOneShelf: (req, res, next)=> {
         const dbInstance = req.app.get('db');
         const { params } = req;
         dbInstance.getOneShelf([params.id])

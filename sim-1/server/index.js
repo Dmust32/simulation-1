@@ -19,16 +19,16 @@ massive(process.env.CONNECTION_STRING).then(dbInstance=>{
     console.error(err);
 })
 
-//INITIAL SHELF REQUEST
+//INITIAL SHELF REQUEST TO GET ALL SHELVES
 app.get('/api/shelves', shelf_controller.getShelves)
 
-//SHELF REQUEST
+//SHELF REQUEST TO DISPLAY ACCESS ONE SHELF
 app.get('/api/shelf/:id', shelf_controller.getOneShelf)
 
 //BIN REQUESTS
-app.get('/api/bin/:id')
-app.put('/api/bin/:id')
-app.delete('/api/bin/:id')
-app.post('/api/bin/:id')
+app.get('/api/bin/:id', bin_controller.getBin)
+app.put('/api/bin/:id', bin_controller.editBin)
+// app.delete('/api/bin/:id', bin_controller.deleteBin)
+// app.post('/api/bin/:id', bin_controller.createBin)
 
 app.listen( port, () => console.log("listening on port", port))
