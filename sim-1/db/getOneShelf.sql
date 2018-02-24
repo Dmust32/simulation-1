@@ -1,3 +1,3 @@
 SELECT *
-FROM shelves
+FROM bins
 Where shelf_id = $1

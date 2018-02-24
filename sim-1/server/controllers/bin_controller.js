@@ -19,5 +19,10 @@ module.exports = {
         const {params} = req;
         dbInstance.deleteBin([params.id])
         .then(() => res.send())
-    }
+    },
+
+    // createBin: (req, res, next) => {
+    //     const dbInstance = req.app.get('db');
+    //     const { }
+    // }
 }

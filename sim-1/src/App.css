@@ -1,1 +1,46 @@
+.banner-container img{
+    height: 50px;
+    margin: 10px;
+    
+}
 
+.banner-container h1 {
+    color: white;
+    
+}
+
+.banner-container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #AB2A19;
+
+    height: 100px;
+    margin: 0;
+}
+
+.shelf {
+    background-color: #D34735;
+    color: white;
+
+    height: 70px;
+    width: 500px;
+    margin: 20px;
+    border-radius: 5px;
+    
+}
+
+.shelf h2 {
+    font-size: 40px;
+    margin: 10px;
+    margin-left: 80px;
+}
+
+.shelf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
